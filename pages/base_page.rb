@@ -5,10 +5,6 @@ class BasePage
 
     attr_accessor :driver
 
-    # def initialize driver
-    #   @driver = driver
-    # end
-
     def goto_page url_path
       Driver.instance.get ENV['base_url'] + url_path
     end
